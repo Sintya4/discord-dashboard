@@ -9,7 +9,7 @@ npm i discord-web-dashboard dbd-capriham-theme
 ```
 or
 ```js
-npm i https://github.com/Sintya4/discord-dashboard.git https://github.com/Sintya4/dbd-capriham-theme.git 
+npm i github:Sintya4/discord-dashboard github:Sintya4/dbd-capriham-theme 
 ```
 
 # Docs website
