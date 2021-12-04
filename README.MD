@@ -255,6 +255,28 @@ Config allows you to set server-stuff. All the options available here are:
   minimizedConsoleLogs: false
 ...
 ```
+Or
+
+```js
+...
+  port: 80,
+  domain: 'http://localhost',
+  sessionFileStore: true/false,
+  SSL: {
+    enabled: true/false,
+    key: 'key string or fs readFileSync',
+    cert: 'cert string or fs readFileSync'
+  },
+  invite: {
+    custom: `Custom html`
+   },
+  noCreateServer: false,
+  supportServer: {
+    custom: `Custom Html`
+  },
+  minimizedConsoleLogs: false
+...
+```
 
 To get express-app with all the endpoints, use:
 
