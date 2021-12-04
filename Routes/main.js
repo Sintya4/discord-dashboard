@@ -20,7 +20,7 @@ module.exports = (app, config, themeConfig) => {
     router.get('/invite', (req, res) => {
         const scopes = config.invite.scopes || ["bot"];
         if(config.invite.custom) {
-          res.send(config.custom);
+          res.send(config.invite.custom);
         } else {
         if (req.query.g) {
             return res.redirect(`https://discord.com/oauth2/authorize?client_id=${config.invite.clientId || config.bot.user.id}&scope=${scopes.join('%20')}&permissions=${config.invite.permissions || '0'}${config.invite.redirectUri ? `&response_type=code&redirect_uri=${config.invite.redirectUri}` : ''}${config.invite.otherParams || ''}&guild_id=${req.query.g}`);
