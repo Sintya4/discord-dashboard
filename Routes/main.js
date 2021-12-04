@@ -19,7 +19,7 @@ module.exports = (app, config, themeConfig) => {
 
     router.get('/invite', (req, res) => {
         const scopes = config.invite.scopes || ["bot"];
-        if(config.invite.custom > 9) {
+        if(config.invite.custom) {
           res.send(config.custom);
         } else {
         if (req.query.g) {
@@ -32,7 +32,7 @@ module.exports = (app, config, themeConfig) => {
     config.supportServer ? null : config.supportServer = {};
 
     router.get(`${config.supportServer.slash || '/support-server'}`, (req, res) => {
-      if(config.supportServer.custom > 9) {
+      if(config.supportServer.custom) {
         res.send(config.supportServer.custom);
       } else {
         if (!config.supportServer.inviteUrl) return res.send({
