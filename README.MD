@@ -52,7 +52,7 @@ const Dashboard = new DBD.Dashboard({
     bot: client,
     theme: CaprihamTheme({
         websiteName: "Assistants",
-        footer: "footer Website"
+        footer: "footer Website",
         iconURL: 'https://assistants.ga/ac_logo_v6.png',
         index: {
             card:{
