@@ -55,6 +55,8 @@ const Dashboard = new DBD.Dashboard({
     bot: client,
     theme: CaprihamTheme({
         websiteName: "Assistants",
+        websiteDesc: "Assistants",
+        websiteAuthor: "Assistants",
         footer: "footer Website",
         iconURL: 'https://assistants.ga/ac_logo_v6.png',
         index: {
